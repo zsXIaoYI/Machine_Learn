@@ -15,3 +15,7 @@ print(a1)
 
 for i in a1.T:  # 迭代转置矩阵，其实就是迭代原矩阵的列
     print(i)
+
+# 迭代所有的元素
+for j in arr.flat:
+    print(j)
