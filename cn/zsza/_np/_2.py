@@ -19,7 +19,7 @@ print(np.hstack((ar1, ar2)))  # 水平合并
 print(np.concatenate((ar1, ar2), axis=0))  # 0:垂直, 1:水平
 
 
-ar = np.array([1, 2, 3])
+ar = np.array([1, 2, 3])  # 一维数组
 print(ar)
 print(ar.shape)  # 返回(3, )
 
