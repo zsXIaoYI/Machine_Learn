@@ -3,6 +3,8 @@
 # 2019/4/15 下午9:55
 
 # y = kx + b图像学习
+# 利用matplotlib画一次函数图像
+
 import numpy as np
 import matplotlib.pyplot as plt
 
