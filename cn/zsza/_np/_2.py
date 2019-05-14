@@ -10,6 +10,12 @@ import numpy as np
 ar1 = np.array([[1, 2],
                 [3, 4]])
 
+print(ar1[:, 0])  # 返回第一列
+print(ar1[:, 0, np.newaxis])  # 返回两行一列的矩阵
+print(isinstance(ar1[:, 0, np.newaxis], np.ndarray))
+
+print('****************f分隔符****************')
+
 ar2 = np.array([[11, 12],
                 [13, 14]])
 

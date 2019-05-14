@@ -10,7 +10,7 @@ import numpy as np
 font = FontProperties(fname='/Library/Fonts/Songti.ttc')
 
 # y = 2x +3
-# (1, 5)和 (3, 9)两个坐标点
+# (1, 5)和 (3, 9)两个坐标点，X和Y都是list类型
 X = [[1], [3]]
 y = [5, 9]
 
