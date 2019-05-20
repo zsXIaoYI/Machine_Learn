@@ -41,4 +41,6 @@ print(x_test)
 x_test.resize((1, 2))
 print(x_test)
 
-
+# 从1开始，每隔2个取一个值
+r1 = np.arange(1, 10, 2)
+print('r1:\n', r1)
