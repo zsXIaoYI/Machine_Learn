@@ -16,6 +16,7 @@ plt.title('test')
 
 plt.show()
 
-z = np.linspace(0, 5, 3)  # z是一个array
-z = z.reshape(-1, 1)
+z = np.linspace(0, 5, 4)  # z是一个array
+# -1:代表行数不确定, 2:代表返回两列
+z = z.reshape((-1, 2))
 print(z)
