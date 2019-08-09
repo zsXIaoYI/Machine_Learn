@@ -16,7 +16,7 @@ a1 = a.reshape((3, 5))
 print('a1:\n', a1)
 
 a2 = a.resize((5, 3))
-print('a2:\n', a2)  # a2返回None返回第三行,前两列的元素
+print('a2:\n', a2)  # a2返回None
 print(a)   # a返回5行3列的数据
 
 # 返回第三行,前两列的元素
