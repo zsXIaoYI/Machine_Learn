@@ -6,10 +6,13 @@ import numpy as np
 
 # 矩阵的乘法
 
-A = np.array([[1, 1], [0, 1]])
-B = np.array([[2, 0], [3, 4]])
+A = np.array([[1, 1],
+              [0, 1]])
+B = np.array([[2, 0],
+              [3, 4]])
 
-print(A * B)
+# 各个元素点乘
+print('A * B点乘:', A * B)
 print(A.dot(B))   # 矩阵乘法
 
 # print(np.random)
@@ -41,4 +44,16 @@ print(x_test)
 x_test.resize((1, 2))
 print(x_test)
 
+# 从1开始，每隔2个取一个值
+r1 = np.arange(1, 10, 2)
+print('r1:\n', r1)
+
+# _d的修改会导致d也修改
+_d = d.ravel()
+print(_d)
+_d[1] = 55
+
+print('After change _d:\n')
+print(d)
+print(_d)
 

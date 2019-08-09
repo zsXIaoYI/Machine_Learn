@@ -62,3 +62,14 @@ data = [10, 30, 40, 50, 10]
 print('期望:', np.mean(data))
 print('方差:', np.var(data))
 print('标准差:', np.std(data))
+
+x = [1, 2, 3]
+# y = [4, 5, 6]
+y = np.array([4, 5, 6])
+
+print('y:\n', y.reshape((-1, 3)))
+print('\n')
+
+x1, y1 = np.meshgrid(x, y)
+print(x1)
+print(y1)

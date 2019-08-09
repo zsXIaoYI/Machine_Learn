@@ -5,7 +5,9 @@
 
 import pandas as pd
 
-x1 = pd.ExcelFile('/PyCharm_Space/untitled/file/test.xlsx')
+x1 = pd.ExcelFile('test.xlsx')
+print('sheetNames:', x1.sheet_names, '类型:', isinstance(x1.sheet_names, list))
+
 print('sheet_names: {0}'.format(x1.sheet_names))
 
 df = x1.parse('details')
