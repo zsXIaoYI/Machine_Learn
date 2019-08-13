@@ -8,6 +8,10 @@ import numpy as np
 sample1 = np.random.random((3, 2))
 print(sample1)
 
+# 随机生成一个0到4的数组,长度为8
+s1 = np.random.randint(0, 5, 8)
+print('s1:', s1)
+
 # 符合标准正态分布
 sample2 = np.random.normal(size=(3, 2))
 print(sample2)
