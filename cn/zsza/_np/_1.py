@@ -23,3 +23,10 @@ print(sample3)
 # 将矩阵转换成x行3列，如果矩阵一共有6个元素，x就是2
 print(sample3.reshape(-1, 3))
 
+x = np.array([-1, 2, 3])
+y = x > 0
+# y返回[False  True  True]
+print('y:', isinstance(y, np.ndarray))
+# 返回[2 3]
+print(x[y])
+
