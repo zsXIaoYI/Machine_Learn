@@ -30,3 +30,7 @@ print('y:', isinstance(y, np.ndarray))
 # 返回[2 3]
 print(x[y])
 
+# z返回[0 1 1]
+z = np.array(x > 0, dtype=np.int)
+print('z:', z)
+
