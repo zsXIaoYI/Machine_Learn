@@ -73,3 +73,15 @@ print('\n')
 x1, y1 = np.meshgrid(x, y)
 print(x1)
 print(y1)
+
+print('-------------')
+
+A = np.array([[1, 2], [3, 4]])
+# B为2行1列的矩阵，2行1列的矩阵只有一个方括号
+B = np.array([7, 8])
+
+print('B的维度:', B.shape)
+C = np.dot(A, B)
+print('C：', C)
+
+
