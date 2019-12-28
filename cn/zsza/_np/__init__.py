@@ -14,10 +14,12 @@ print('a:\n', a)  # [0, 1, ...... 14]
 
 a1 = a.reshape((3, 5))
 print('a1:\n', a1)
+# reshape操作后，数组a并没有被修改
+print('reshape操作后a:\n', a)
 
 a2 = a.resize((5, 3))
 print('a2:\n', a2)  # a2返回None
-print(a)   # a返回5行3列的数据
+print('resize操作后的a:\n', a)  # a返回5行3列的数据
 
 # 返回第三行,前两列的元素
 print(a[2, 0:2])  # 返回[6, 7]
@@ -32,16 +34,8 @@ def fn(n):
 
 print(fn(3))
 
-
 b = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 print('b:\n', b)
-
-# 随机生成一个三行三列的矩阵
-b1 = np.random.randn(3, 3)
-print('b1:\n', b1)
-
-print(b1[:, :2])
-
 
 print('*********矩阵的乘法********')
 
@@ -55,7 +49,6 @@ print(A.dot(B))
 
 print('A的转置矩阵:\n', A.transpose())
 
-
 print('************求期望、方差、标准差**************')
 
 data = [10, 30, 40, 50, 10]
@@ -63,7 +56,7 @@ print('期望:', np.mean(data))
 print('方差:', np.var(data))
 print('标准差:', np.std(data))
 
-x = [1, 2, 3]
+x = [1, 2, 3, 7]
 # y = [4, 5, 6]
 y = np.array([4, 5, 6])
 
@@ -71,8 +64,8 @@ print('y:\n', y.reshape((-1, 3)))
 print('\n')
 
 x1, y1 = np.meshgrid(x, y)
-print(x1)
-print(y1)
+print('x1:\n', x1)
+print('y1:\n', y1)
 
 print('-------------')
 
@@ -83,5 +76,3 @@ B = np.array([7, 8])
 print('B的维度:', B.shape)
 C = np.dot(A, B)
 print('C：', C)
-
-
