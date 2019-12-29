@@ -51,3 +51,20 @@ arr_int = arr.astype(np.int32)
 print('arr_int:\n', arr_int)
 
 
+print('Numpy数组进行切片\n')
+
+arr1 = np.arange(15)
+print('arr1:', arr1)
+
+# 切片的赋值操作会影原有的数组，原有的数组会发生改变
+arr1[8:12] = 30
+print('切片之后的arr1:', arr1)
+
+arr2 = np.arange(25).reshape((5, 5))
+print('arr2:\n', arr2)
+
+x_bool = np.array([0, 1, 2, 3, 1])
+print(x_bool == 1)
+
+# 返回arr2的第二行和第五行
+print(arr2[x_bool == 1])
