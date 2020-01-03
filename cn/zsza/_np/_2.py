@@ -41,4 +41,7 @@ print('arr2:\n', arr2)
 # axis=0 每列求和
 print('arr2每行求和:', arr2.sum(axis=1))
 
-
+# 循环遍历arr2
+for row in arr2:
+    for ele in row:
+        print(ele)
