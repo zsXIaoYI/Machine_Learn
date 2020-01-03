@@ -24,12 +24,11 @@ print(sample3)
 # 将矩阵转换成x行3列，如果矩阵一共有6个元素，x就是2
 print(sample3.reshape(-1, 3))
 
-
 # 随机生成一个三行三列的矩阵
 b1 = np.random.randn(3, 3)
 print('b1:\n', b1)
 
-print(b1[:, :2])    # 返回b1所有行的前两列元素
+print(b1[:, :2])  # 返回b1所有行的前两列元素
 
 x = np.array([-1, 2, 3])
 y = x > 0
@@ -50,7 +49,6 @@ print('arr\'s type:', arr.dtype)
 arr_int = arr.astype(np.int32)
 print('arr_int:\n', arr_int)
 
-
 print('Numpy数组进行切片\n')
 
 arr1 = np.arange(15)
@@ -68,3 +66,12 @@ print(x_bool == 1)
 
 # 返回arr2的第二行和第五行
 print(arr2[x_bool == 1])
+
+# 布尔型索引还可以进行或操作
+arr3 = arr2[(x_bool == 1) | (x_bool == 0)]
+print('arr3:\n', arr3)
+
+
+# 布尔型索引可以与切片结合使用
+arr4 = arr2[x_bool == 1, 3:]
+print('arr4:\n', arr4)
