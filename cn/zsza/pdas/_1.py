@@ -20,3 +20,6 @@ print('s3:\n', s3)
 
 s4 = pd.DataFrame(np.random.randn(3, 3), index=s3, columns=list('ABC'))
 print('s4:\n', s4)
+
+s5 = pd.Series(1, index=list(range(4)), dtype='float32')
+print('s5:\n', s5)
