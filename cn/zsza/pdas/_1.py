@@ -4,6 +4,8 @@
 # @File: _1.py
 # __author__ = 'zs'
 
+# pd.Series操作
+
 import pandas as pd
 import numpy as np
 
