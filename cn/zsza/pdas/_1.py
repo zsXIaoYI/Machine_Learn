@@ -23,3 +23,7 @@ print('s4:\n', s4)
 
 s5 = pd.Series(1, index=list(range(4)), dtype='float32')
 print('s5:\n', s5)
+
+# 返回结果的索引按照字典顺序排列
+s6 = pd.Series({'one': 1, 'two': 2, 'three': 3, 'four': np.nan})
+print('s2 + s6: \n', s2 + s6)
