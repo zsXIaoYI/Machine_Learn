@@ -16,5 +16,7 @@ model.fit(x_train, y_train)
 
 print(model)
 
+# w
 print(model.coef_)
+# 偏执b
 print(model.intercept_)
