@@ -2,7 +2,7 @@
 # __author__ = 'zs'
 # 2019/4/24 下午3:44
 
-
+# 线性回归
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
