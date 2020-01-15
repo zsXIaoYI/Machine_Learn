@@ -83,3 +83,16 @@ print('arr5:\n', arr5)
 # 返回arr5中大于7的元素的坐标，第一个数组是行坐标，第二个是列数组
 print('np.where(arr5 > 7):\n', np.where(arr5 > 7))
 
+# 打乱数组中的元素
+np.random.shuffle(arr5)
+print('after shuffle arr5: \n', arr5)
+
+arr_min = np.array([[1, 3, 4],
+                    [3, 1, 2],
+                    [2, 5, 6]])
+# axis=0: 列上的最小值,并返回行数组
+print(np.argmin(arr_min, axis=0))
+
+# axis=1: 行上的最小值,并返回列数组
+print(np.argmin(arr_min, axis=1))
+
