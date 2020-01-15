@@ -62,6 +62,7 @@ arr2 = np.arange(25).reshape((5, 5))
 print('arr2:\n', arr2)
 
 x_bool = np.array([0, 1, 2, 3, 1])
+# 返回布尔型数组: [False  True False False  True]
 print(x_bool == 1)
 
 # 返回arr2的第二行和第五行
@@ -75,3 +76,10 @@ print('arr3:\n', arr3)
 # 布尔型索引可以与切片结合使用
 arr4 = arr2[x_bool == 1, 3:]
 print('arr4:\n', arr4)
+
+arr5 = np.arange(1, 13).reshape((4, 3))
+print('arr5:\n', arr5)
+
+# 返回arr5中大于7的元素的坐标，第一个数组是行坐标，第二个是列数组
+print('np.where(arr5 > 7):\n', np.where(arr5 > 7))
+
