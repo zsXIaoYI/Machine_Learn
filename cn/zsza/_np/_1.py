@@ -96,3 +96,14 @@ print(np.argmin(arr_min, axis=0))
 # axis=1: 行上的最小值,并返回列数组
 print(np.argmin(arr_min, axis=1))
 
+print('**************分隔符**************')
+J = np.array([0, 1, 0])
+# np.where返回tuple类型
+print('np.where类型:\n', isinstance(np.where(J == 0), tuple))
+print(np.where(J == 0)[0])
+
+
+arr6 = np.arange(1, 17).reshape((4, 4))
+print('arr6:\n', arr6)
+# 返回arr6数组1、2行中第2和第3列的元素
+print(arr6[np.ix_([1, 2], [2, 3])])
