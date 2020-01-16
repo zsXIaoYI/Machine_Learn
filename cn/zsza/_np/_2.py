@@ -45,3 +45,18 @@ print('arr2每行求和:', arr2.sum(axis=1))
 for row in arr2:
     for ele in row:
         print(ele)
+
+arr3 = np.array([3, 4])
+arr4 = np.array([2, 6])
+print('数组相减:\n', arr3 - arr4)
+print('两数组相减后,各元素求平方,最后求和:\n', np.sum((arr3 - arr4) ** 2))
+
+arr5 = np.array([[3, 6],
+                 [2, 4]])
+'''
+np.var:
+ axis=1：求行上的方差
+ axis=0：求列上的方差
+'''
+print(np.var(arr5, axis=0))
+
