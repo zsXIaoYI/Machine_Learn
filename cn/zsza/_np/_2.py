@@ -13,7 +13,7 @@ ar1 = np.array([[1, 2],
 print('arr1的类型:', ar1.dtype)
 
 print(ar1[:, 0])  # 返回第一列
-print(ar1[:, 0, np.newaxis])  # 返回两行一列的矩阵
+print(ar1[:, 0, np.newaxis])  # 在上面基础上增加一个维度，返回两行一列的矩阵,
 print(isinstance(ar1[:, 0, np.newaxis], np.ndarray))
 
 print('****************分隔符****************')
@@ -59,4 +59,9 @@ np.var:
  axis=0：求列上的方差
 '''
 print(np.var(arr5, axis=0))
+
+
+# 求方差
+print(np.var([6, 4, 2]))
+
 
