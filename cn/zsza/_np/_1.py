@@ -109,3 +109,9 @@ arr6 = np.arange(1, 17).reshape((4, 4))
 print('arr6:\n', arr6)
 # 返回arr6数组1、2行中第2和第3列的元素
 print(arr6[np.ix_([1, 2], [2, 3])])
+
+arr7 = np.array([-1, 1, 2])
+arr7_bool = arr7 > 0
+print(arr7_bool)  # 返回:[False  True  True]
+print(arr7_bool.astype(np.int))  # 返回[0 1 1]
+
