@@ -97,6 +97,8 @@ print(np.argmin(arr_min, axis=0))
 print(np.argmin(arr_min, axis=1))
 
 print('**************分隔符**************')
+# np.where()函数返回满足条件的元素的索引,当数组是一维时，返回一个数组;
+# 当数组是二维时，返回行坐标和列坐标
 J = np.array([0, 1, 0])
 # np.where返回tuple类型
 print('np.where类型:\n', isinstance(np.where(J == 0), tuple))
