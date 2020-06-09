@@ -4,6 +4,10 @@
 
 import numpy as np
 
+# 随机生成一个0到1的一维矩阵，长度为5
+t1 = np.random.rand(5)
+print('t1:', t1)
+
 # 随机生成一个0到1的三行两列的矩阵
 sample1 = np.random.random((3, 2))
 print(sample1)
